@@ -1,0 +1,29 @@
+{% extends "rest_framework/base.html" %}
+{% load static %}
+
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+{% endblock %}
+
+{% block bootstrap_theme %}
+    
+{% endblock %}
+
+{% block bootstrap_navbar_variant %}
+    
+{% endblock %}
+
+{% block style %}
+    <style>
+        /* Forcefully override potential defaults */
+        body {
+            background-color: yellow !important;
+        }
+        h1 {
+            color: blue !important;
+        }
+        * {
+            color: red !important;
+        }
+    </style>
+{% endblock %}
